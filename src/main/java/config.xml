@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 
+    <bean class = "com.springcore.Student" name = "student1">
+    	
+    	by property injection or setter injection -->
+    	
+    	<!-- Value as tag 
+    	
+    	
+    	<property name = "id">
+    		<value> 11101 </value>
+    	</property >
+    	
+    	<property name = "name">
+    		<value> SOMU SAXENA </value>
+    	</property >
+    	
+    	<property name = "address">
+    		<value> Pune </value>
+    	</property >
+    	
+    	-->
+    	
+    	<!-- Value as Attribute 
+    	
+    	<property name = "id" value = "11101"/>
+    	
+    	<property name = "name" value = "SOMU SAXENA"/>
+    	
+    	<property name = "address" value = "Pune"/>
+    	
+    	
+    	
+    </bean>
+    -->
+    
+    <!-- Property injection using P-schema -->
+    
+    <bean class = "com.springcore.Student" name = "student1" p:id ="11101" p:name ="SOMU SAXENA" p:address="Pune" />
+    
+    
+	<bean class = "com.springcore.Student" name = "student2">
+    
+    	<property name = "id">
+    		<value> 11102 </value>
+    	</property >
+    	
+    	<property name = "name">
+    		<value> AMUL SHARMA </value>
+    	</property >
+    	
+    	<property name = "address">
+    		<value> Mumbai </value>
+    	</property >
+    </bean>
+    <bean class = "com.springcore.Student" name = "student3">
+    
+    	<property name = "id">
+    		<value> 11103 </value>
+    	</property >
+    	
+    	<property name = "name">
+    		<value> SHASHANK SHARMA </value>
+    	</property >
+    	
+    	<property name = "address">
+    		<value> Navi Mumbai </value>
+    	</property >
+    </bean>    
+</beans>

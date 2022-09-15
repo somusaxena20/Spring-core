@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <context:annotation-config/>
+    
+    <bean class = "com.springcore.autowiring.annotation.Address" name = "address1" >
+    	<constructor-arg name="street" value = "Civil Line" />
+    	<constructor-arg name="city" value = "Indore" />
+    </bean>
+    
+    <bean class = "com.springcore.autowiring.annotation.Address" name = "address2" >
+    	<constructor-arg name="street" value = "Civil Line" />
+    	<constructor-arg name="city" value = "Jabalpur" />
+    </bean>
+    
+    <bean class = "com.springcore.autowiring.annotation.Emp" name = "e1" />
+        
+</beans>
